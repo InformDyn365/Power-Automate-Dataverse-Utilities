@@ -1,7 +1,7 @@
 # Power-Automate-Dataverse-Utilities
 Group of Utility Child Flows that can be used to enhance your Power Automate Cloud Flows
 
-To Install, grab the solution ZIP file from the releases page and import to your environment. You will need to update the (2) connection references for Dataverse and Office 365 Outlook
+To Install, grab the solution ZIP file from the <a href=https://github.com/InformDyn365/Power-Automate-Dataverse-Utilities/releases>releases page</a> and import to your environment. You will need to update the (2) connection references for Dataverse and Office 365 Outlook
 
 PAUTIL.PA.Child.GetGuidByName - Pass in a table name, column name, and column value to search the entity for that specific row, then return the GUID for that row. E.g.: Search the Teams table for a specific team by Name, then return the GUID for that Team.
 
