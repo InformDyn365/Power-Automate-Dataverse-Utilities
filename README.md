@@ -1,2 +1,15 @@
 # Power-Automate-Dataverse-Utilities
 Group of Utility Child Flows that can be used to enhance your Power Automate Cloud Flows
+
+To Install, grab the solution ZIP file from the releases page and import to your environment. You will need to update the (2) connection references for Dataverse and Office 365 Outlook
+
+PAUTIL.PA.Child.GetGuidByName - Pass in a table name, column name, and column value to search the entity for that specific row, then return the GUID for that row. E.g.: Search the Teams table for a specific team by Name, then return the GUID for that Team.
+
+PAUTIL.PA.ChildFlow.ErrorHandler - Pass in the workflow() and Email Address to notify from a flow to send out an email that an error has occurred.
+
+PAUTIL.PA.ChildFlow.GetRowURL - Pass in the BODY of a Dataverse 'Get Row by ID' action. Flow will parse the returned data to get the URL to the specific row. This can then be included in Emails or written directly to the row in a custom field.
+
+PAUTIL.PA.ChildFlow.GetTeamMemberEmails - Pass in a Team GUID. Flow will loop through members of the team and return a semi-colon delimited list of email addresses for each team member from their user record. List can be used in an outlook email action.
+
+PAUTIL.PA.ChildFlow.GetTeamMembersActivityPartyList - Pass in a GUID for a Team. Flow will get the members of that team and return a string of Activity Party entries to be used in a Dataverse Email Activity. Be sure and edit the variable strParticipationTypeMask value if you want something other than TO (2). CC = 3 and BCC = 4
+
